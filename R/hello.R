@@ -16,3 +16,7 @@
 hello <- function() {
   print("Hello, world! It's version 0.2!")
 }
+
+squared.cdist <- function(x, y) {
+  rdist::cdist(x, y, metric="euclidean")^2
+}
